@@ -56,10 +56,11 @@
       { "@type": "Occupation", "name": "AI Executive", "occupationLocation": { "@type": "City", "name": "Mumbai" } },
       { "@type": "Occupation", "name": "Team Leader, Digital Marketing & Technology Operations" }
     ],
-    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Bhavan's College, Mumbai" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Bhavan's College, Andheri West, Mumbai" },
+    "award": ["Student of the Year 2026–27, Bhavan's College", "Overall NSS Leader, Bhavan's College", "Scout and Guide State Award"],
     "hasCredential": { "@type": "EducationalOccupationalCredential", "credentialCategory": "degree", "name": "B.Sc. Computer Science (2026)" },
     "address": { "@type": "PostalAddress", "addressLocality": "Mira Road, Mumbai", "addressRegion": "Maharashtra", "addressCountry": "IN" },
-    "knowsAbout": ["AI automation", "n8n", "Workflow automation", "Marketing automation", "Dashboards", "Python", "Power BI", "Android development", "WhatsApp marketing", "Email marketing"],
+    "knowsAbout": ["AI automation", "n8n", "Workflow automation", "Marketing automation", "Dashboards", "Python", "Power BI", "Android development", "WhatsApp marketing", "Email marketing", "Web development", "Software testing", "MySQL"],
     "sameAs": [
       "https://www.linkedin.com/in/abhishek-ingole-90b2913a8",
       "https://github.com/Abhi-ingole"
@@ -157,6 +158,10 @@ h2.sec{font-family:var(--display);font-weight:700;font-size:clamp(30px,3.6vw,40p
 .cv li b{display:block;font-weight:600}
 .cv li span{color:var(--slate);font-size:15px}
 
+.awards ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.awards li{background:var(--paper);border:1px solid var(--line);border-top:4px solid var(--signal);border-radius:4px 4px 16px 16px;padding:22px 22px 24px}
+.awards b{display:block;font-family:var(--display);font-weight:700;font-size:20px;line-height:1.25;margin-bottom:8px}
+.awards span{color:var(--slate);font-size:15px}
 .contact{background:var(--paper);border-radius:24px;padding:48px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:32px;align-items:end;border:1px solid var(--line)}
 .contact h2{margin-bottom:12px}
 .contact p{margin:0;color:var(--slate);max-width:48ch}
@@ -174,6 +179,7 @@ footer{padding:36px 0 48px;color:var(--slate);font-size:14px;display:flex;justif
   .chain li:not(:last-child)::before{top:auto;bottom:-6px;right:auto;left:24px}
   .pulse{display:none}
   .split,.cv{grid-template-columns:minmax(0,1fr);gap:40px}
+  .awards ul{grid-template-columns:minmax(0,1fr)}
   .work li{grid-template-columns:minmax(0,1fr);gap:8px}
   .work .where{text-align:left}
   .contact{grid-template-columns:minmax(0,1fr);padding:32px 24px}
@@ -191,7 +197,7 @@ footer{padding:36px 0 48px;color:var(--slate);font-size:14px;display:flex;justif
 <div class="wrap">
   <header class="top">
     <b>Abhishek Ingole</b>
-    <nav aria-label="Sections"><a href="#about">About</a><a href="#work">Work</a><a href="#experience">Experience</a><a href="#contact">Contact</a></nav>
+    <nav aria-label="Sections"><a href="#about">About</a><a href="#work">Work</a><a href="#experience">Experience</a><a href="#recognition">Recognition</a><a href="#contact">Contact</a></nav>
   </header>
 
   <main>
@@ -277,6 +283,18 @@ footer{padding:36px 0 48px;color:var(--slate);font-size:14px;display:flex;justif
           <div class="stack">Power BI, DAX, Power Query</div></div>
           <div class="where">Portfolio project</div>
         </li>
+        <li>
+          <div><h3>Contract Management System</h3><small>Desktop app</small></div>
+          <div><p>Keeps track of contracts, parties, dates, terms and status, with full add, edit and delete on a MySQL database.</p>
+          <div class="stack">Python, Tkinter, MySQL</div></div>
+          <div class="where"><a href="https://github.com/Abhi-ingole/Contract-Management-System-CMS-" target="_blank" rel="noopener">View code</a></div>
+        </li>
+        <li>
+          <div><h3>RFID Smart Door Lock</h3><small>Team IoT project</small></div>
+          <div><p>A door lock that opens only for registered RFID cards, checking each card in real time on a microcontroller.</p>
+          <div class="stack">IoT, RFID, embedded programming</div></div>
+          <div class="where"><a href="https://github.com/HarshNaralkar/RFID-Smart-Door-Lock-System" target="_blank" rel="noopener">View code</a></div>
+        </li>
       </ul>
     </section>
 
@@ -287,18 +305,29 @@ footer{padding:36px 0 48px;color:var(--slate);font-size:14px;display:flex;justif
           <li><b>AI Executive, LoanBazaar</b><span>Secure Distribution Venture Pvt. Ltd., Mumbai. Team Leader, Digital Marketing &amp; Technology Operations</span></li>
           <li><b>OM Enterprises</b><span>Paint contracting business. Runs operations and builds its software</span></li>
           <li><b>Production Assistant, Surelines</b><span>Pune</span></li>
-          <li><b>Software Testing Intern, CDPL</b></li>
-          <li><b>Web Development Intern, Oasis Infobyte</b></li>
+          <li><b>Software Testing Intern, CDPL</b><span>Manual testing of web apps: wrote and ran test cases, reported and tracked bugs</span></li>
+          <li><b>Web Development Intern, Oasis Infobyte</b><span>Built a landing page, a portfolio site and a temperature converter in HTML, CSS and JavaScript</span></li>
         </ol>
       </div>
       <div>
         <h3>Education and certificates</h3>
         <ul>
-          <li><b>B.Sc. Computer Science</b><span>Bhavan’s College, Mumbai, 2026</span></li>
+          <li><b>B.Sc. Computer Science</b><span>Bhavan’s College, Andheri West, Mumbai, 2026</span></li>
           <li><b>Microsoft Power BI certification</b><span>June 2026</span></li>
-          <li><b>Job simulations on Forage</b><span>Tata and Deloitte</span></li>
+          <li><b>Tata Data Visualisation job simulation</b><span>Forage</span></li>
+          <li><b>Cybersecurity job simulation</b><span>Forage</span></li>
+          <li><b>Analytics and Machine Learning foundations</b><span>LinkedIn Learning</span></li>
         </ul>
       </div>
+    </section>
+
+    <section id="recognition" class="awards" aria-labelledby="rec-h">
+      <h2 class="sec" id="rec-h">Recognition</h2>
+      <ul>
+        <li><b>Student of the Year 2026–27</b><span>Bhavan’s College, Andheri West, for academics, leadership and college activities</span></li>
+        <li><b>Overall NSS Leader</b><span>Bhavan’s College. Led the unit’s teams and organised community service programmes</span></li>
+        <li><b>Scout and Guide State Award</b><span>State-level award for discipline, leadership and scouting</span></li>
+      </ul>
     </section>
 
     <section id="contact" class="contact" aria-labelledby="contact-h">
